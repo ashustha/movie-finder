@@ -1,0 +1,83 @@
+.movie{
+    &-name{
+        margin-bottom: 32px;
+        h2{
+            font-size: 32px;
+            color: $primary;
+        }
+    
+    }
+    .video-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; 
+        iframe{
+            position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        }
+      }
+      
+      
+      .image-container {
+        position: relative;
+        width: 100%;
+        padding-top: 116.25%; 
+        overflow: hidden;
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+      }
+      
+      &-visual{
+        margin-bottom: 16px;
+      }
+    
+      .movieInfo{
+        margin-bottom: 16px;
+      }
+      .description{
+        p{
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 13px;
+        }
+        .detail{
+            li{
+                padding: 15px 0;
+                border-bottom: 1px solid #ffffff;
+            }
+            strong{
+              font-weight: 500;
+            }
+            .stars,
+            .writers{
+              display: inline-block;
+              li{
+                all: unset;
+                display: inline-block;
+                padding-right: 5px;
+                margin-right: 10px;
+                margin-bottom: 5px;
+                position: relative;
+                &::after{
+                  position: absolute;
+                  content: ',';
+                  bottom: 0;
+                  right: 0;
+                }
+              }
+            }
+        }
+      }
+    .similarMovies{
+        padding: 50px 0 ;
+      }
+}
